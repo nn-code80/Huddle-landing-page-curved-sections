@@ -1,0 +1,497 @@
+:root{
+
+/* Colors */
+/* Primary */
+
+--Pink: hsl(322, 100%, 66%);
+--LightPink: hsl(321, 100%, 78%);
+--LightRed: hsl(0, 100%, 63%);
+
+/* Neutral */
+
+--VeryDarkCyan: hsl(192, 100%, 9%);
+--VeryPaleBlue: hsl(207, 100%, 98%);
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* font-family: "Poppins", sans-serif; */
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 2rem auto 7rem;
+    max-width: 1100px;
+    padding: 1rem 1.5rem;
+  
+
+}
+
+
+.logo{
+    max-width: 10rem;
+}
+
+header button{
+    height: 2rem;
+    border: 1px solid var(--Pink);
+    width: 6rem;
+    background-color: white;
+    border-radius: 20px;
+    color: var(--Pink);
+}
+
+
+
+.top{
+    display: grid;
+    text-align: center;
+    row-gap: 2rem;
+    margin-top: 5rem;
+}
+
+.toptext{
+    max-width: 25rem;
+    font-size: 0.8rem;
+    margin: 0 auto;
+}
+
+.top button, .readytobuild button{
+width: 15rem;
+height: 3rem;
+margin: 0 auto;
+margin-bottom: 2rem;
+border-radius: 25px;
+border: none;
+background-color: var(--Pink);
+color: white;
+box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.324);
+}
+
+.top button:hover, .readytobuild button:hover, .sendinfo button:hover{
+    background-color: var(--LightPink);
+}
+
+
+
+header button, .top button, .readytobuild button{
+    transition: all 0.35s ease;
+}
+
+header button:hover, .top button:hover, .readytobuild button:hover, .sendinfo button:hover{
+    
+    transform: scale(1.04);
+}
+
+.top, .growtogether, .flowconversation, .yourusers, .readytobuild, .lowerinfo{
+    width:80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.mockup{
+   width:80%;
+    max-width: 900px;
+    margin: 0 auto;
+    transition: all 0.4s ease;
+}
+
+.mockup:hover, .convo:hover{
+    transform: scale(1.02) rotate(-3deg);
+}
+
+.numbers{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 3rem;
+} 
+
+.numbers img{
+    width: 1.5rem;
+}
+
+.stat {
+font-size: 3rem;
+   font-weight: 600;
+   text-align: left;
+}
+.stat2{
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.475);
+    margin-top: 0.5rem;
+}
+
+.community, .messages{
+    display: grid;
+}
+.community img, .messages img{
+    align-self: flex-start;
+}
+
+
+.growtogether{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    column-gap: 2rem;
+    padding-top:5rem;
+    padding-bottom: 5rem;
+}
+.imggt{
+ 
+    width:80%;
+    max-width: 500px;
+    transition: all 0.35s ease;
+}
+
+.imggt:hover, .yourusers img:hover{
+    transform: scale(1.02) rotate(4deg) ;
+}
+
+.growtogether1{
+    background-color: var(--VeryPaleBlue);
+   
+
+}
+.upper{
+    margin-bottom: -5px;
+}
+
+    
+.first{
+    width: 100%;
+}
+
+.growtogether p{
+    max-width: 25rem;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.489);
+}
+
+.infogt, .infofc, .infousers{
+    display: grid;
+    row-gap: 2rem;
+    
+}
+
+.flowconversation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:3rem;
+    padding-bottom: 7rem;
+    transition: all 0.5s ease; 
+  
+}
+
+.flowconversation p{
+    max-width: 26rem;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.489);
+}
+
+
+.convo{
+    width:80%;
+    max-width: 600px;
+    transition: all 0.35s ease;
+
+}
+
+.yourusers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0; 
+   
+}
+
+.yourusers img{
+    width:80%;
+    max-width: 500px;
+    transition: all 0.35s ease;
+}
+
+.yourusers p {
+    max-width: 26rem;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.489);
+}
+.yourusers1{
+    background-color: var(--VeryPaleBlue);
+}
+
+.bg2{
+    position: relative;
+    top: 5px;
+}
+
+.bgyours{
+    width: 100%;
+}
+
+.readytobuild{
+    display: grid;
+    justify-content: center;
+    margin: 5rem auto;
+    row-gap: 2rem;
+}
+
+.lowerinfo{
+    padding: 5rem 0 5rem 0;
+    display: flex;
+    justify-content: space-between;
+  
+    color: white;
+}
+
+.lowerinfo1{
+    background-color: var(--VeryDarkCyan);
+}
+
+.info{
+    display: grid;
+    row-gap: 1.5rem;
+}
+
+.phone, .email {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.info p{
+    font-size: 0.8rem;
+    max-width: 17rem;
+    line-height: 1.8;
+}
+
+.newsletter{
+   display: flex;
+   flex-direction: column;
+   row-gap: 1rem;
+    
+}
+
+.newsletter p{
+    font-size: 0.8rem;
+    max-width: 19rem;
+    line-height: 1.8;
+}
+
+.newsletter h2{
+    text-transform: uppercase;
+}
+
+.fa-brands{
+font-size: 1.3rem;
+margin-top: 1.5rem;
+transition: color 0.3s ease;
+}
+
+.fa-brands:hover{
+    color: rgb(82, 186, 221);
+}
+
+.sendinfo{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.sendinfo input{
+    height: 2rem;
+    width: 18rem;
+}
+
+
+.sendinfo button{
+    height: 2rem;
+    width: 6.5rem;
+    font-size: 0.75rem;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--Pink);
+    font-weight: 600;
+    color: white;
+    transition: all 0.35s ease;
+    margin-left: 1rem;
+}
+
+#text{
+    position: relative;
+    bottom:17px;
+    font-size: 0.8rem;
+}
+
+.last{
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+.last2, .first2, .bgyours2{
+    display: none;
+}
+
+
+@media (max-width: 1025px){
+    #text{
+        position: relative;
+        bottom:88px;
+        font-size: 0.8rem;
+    }
+
+.first, .bgyours, .last{
+    display: none;
+}
+
+.last2{
+    display: block;
+    width: 100%;
+   position: relative;
+   top: 2px;
+}
+
+.first2{
+    display: block;
+    width: 100%;
+}
+
+.bgyours2{
+    display: block;
+    width: 100%;
+}
+
+   .growtogether{
+    flex-direction: column;
+    text-align: center;
+   }
+
+   .infogt{
+    order:1;
+   }
+   .imggt{
+    order:0;
+    margin-bottom: 3rem;
+   }
+
+  header{
+    margin: 2rem auto;
+    margin-bottom: 4rem;
+  } 
+
+  .mockup{
+    margin:2rem auto;
+  }
+
+  .top button{
+    margin-bottom:2rem;
+    justify-self: center;
+
+
+  }
+
+.flowconversation{
+   flex-direction: column;
+   text-align: center;
+   padding: 5rem 0;
+   transition: all .5s ease;
+  
+}
+
+.infofc{
+    margin-top: 3rem;
+}
+
+.yourusers{
+    flex-direction: column;
+    text-align: center;
+    transition: all 1s ease;
+    padding-bottom: 5rem;
+   
+}
+
+.infousers{
+    order:1;
+    margin-top: 3rem;
+
+}
+
+.yourusers img{
+    order:0;
+}
+
+.readytobuild{
+    text-align: center;
+}
+
+.lowerinfo{
+    flex-direction: column;
+}
+
+.community, .messages{
+margin-bottom: 3rem;
+}
+
+.sendinfo{
+  display: block;
+  
+   text-align: right;
+   margin-bottom: 2rem;;
+   transition: all 0.5s ease;
+}
+
+.sendinfo input{
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: .5rem;
+    transition: all 0.5s ease;
+}
+
+.sendinfo button{
+    height: 2rem;
+}
+
+
+.newsletter{
+    order:0;
+}
+
+.info{
+    order:1;
+}
+
+@media (max-width:795px) {
+    .numbers{
+        flex-direction: column;
+        
+    }
+}
+
+
+} 
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
